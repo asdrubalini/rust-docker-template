@@ -1,0 +1,9 @@
+version: "3"
+
+services:
+    worker:
+        image: rust-docker-template
+        env_file:
+            - .env
+        restart: unless-stopped
+
